@@ -1,0 +1,11 @@
+[package]
+name = "salsa20-regression"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex-literal = "0.4.1"
+salsa20  = { git = "https://github.com/RustCrypto/stream-ciphers.git", rev = "5b0a98b493d964f3ab8eb630aa6695dfbbcdffb0" }
+salsa20orig = { version = "=0.10.2", package = "salsa20" }
